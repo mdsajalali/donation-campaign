@@ -5,7 +5,7 @@ import App from "./App.jsx";
 import Root from "./Root/Root.jsx";
 import DonationDetail from "./components/DonationDetail.jsx";
 import "./index.css";
-import Donation from "./pages/Donation.jsx";
+import Donations from "./pages/Donations.jsx";
 import Statistics from "./pages/Statistics.jsx";
 
 const router = createBrowserRouter([
@@ -18,8 +18,8 @@ const router = createBrowserRouter([
         element: <App />,
       },
       {
-        path: "/donation",
-        element: <Donation />,
+        path: "/donations",
+        element: <Donations />,
       },
       {
         path: "/statistics",
