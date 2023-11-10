@@ -3,16 +3,15 @@ import { Cell, Pie, PieChart } from "recharts";
 const Statistics = () => {
   const data = [
     { name: "Group A", value: 400 },
-    { name: "Group B", value: 300 },
-    { name: "Group C", value: 500 },
-    { name: "Group D", value: 200 },
+    { name: "Group B", value: 700 },
+  
   ];
 
-  const COLORS = ["#FF444A", "#00C49F", "#0088FE", "#FFBB28"];
+  const COLORS = ["#FF444A", "#00C49F"];
 
   return (
-    <div className="lg:container flex items-center justify-center min-h-[80vh] mx-auto p-5">
-      <PieChart width={380} className="mx-auto" height={380}>
+    <div className="lg:container flex flex-col items-center justify-center min-h-[80vh] mx-auto p-5">
+      <PieChart width={350} className="mx-auto" height={350}>
         <Pie
           data={data}
           cx="50%"
@@ -26,6 +25,15 @@ const Statistics = () => {
           ))}
         </Pie>
       </PieChart>
+
+      <div className="flex gap-5 flex-wrap items-center justify-center text-2xl">
+        <p>
+          Your Donation : <span className="font-bold">33.3%</span>
+        </p>
+        <p>
+          Total Donation: <span className="font-bold">66.7%</span>{" "}
+        </p>
+      </div>
     </div>
   );
 };
