@@ -1,7 +1,7 @@
 import logo from "../assets/images/Logo.png";
 const Header = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center sm:justify-between gap-5 py-5 px-5">
+    <div className="flex flex-wrap items-center justify-center sm:justify-between gap-5">
       <div>
         <img className="w-32 md:w-44" src={logo} alt="logo" />
       </div>
