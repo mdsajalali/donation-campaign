@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/Logo.png";
 const Header = () => {
   return (
@@ -11,13 +11,13 @@ const Header = () => {
       <nav>
         <ul className="flex gap-10 text-[16px] md:text-[18px]">
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/">Donation</Link>
+            <NavLink to="/donation">Donation</NavLink>
           </li>
           <li>
-            <Link to="/">Statistics</Link>
+            <NavLink to="/statistics">Statistics</NavLink>
           </li>
         </ul>
       </nav>

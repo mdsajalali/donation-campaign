@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Donation from "../components/Donation";
+import Donation from "../components/DonationCategory";
 
-const Donations = () => {
+const DonationsCategory = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -22,4 +22,4 @@ const Donations = () => {
   );
 };
 
-export default Donations;
+export default DonationsCategory;

@@ -1,5 +1,5 @@
 import Banner from "./pages/Banner";
-import Donations from "./pages/Donations";
+import DonationsCategory from "./pages/DonationsCategory";
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
         </div>
       </div>
       <div className="lg:container mx-auto p-5">
-        <Donations />
+        <DonationsCategory />
       </div>
     </div>
   );
