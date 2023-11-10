@@ -1,3 +1,4 @@
+import DonationCards from "./pages/DonationCards";
 import Header from "./pages/Header";
 import Hero from "./pages/Hero";
 
@@ -9,6 +10,9 @@ const App = () => {
           <Header />
           <Hero />
         </div>
+      </div>
+      <div className="lg:container mx-auto p-5">
+        <DonationCards />
       </div>
     </div>
   );

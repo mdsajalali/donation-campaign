@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "picture": "https://i.ibb.co/fYsYnV3/Health.png",
+    "category": "Health",
+    "category_bg": "#0052FF26",
+    "card_bg": "#0052FF",
+    "description": "Clean water for children",
+    "price": 200
+  },
+  {
+    "id": 2,
+    "picture": "https://i.ibb.co/zXjRRzK/Education.png",
+    "category": "Education",
+    "category_bg": "#FF444A26",
+    "card_bg": "#FF444A",
+    "description": "Good education",
+    "price": 300
+  },
+  {
+    "id": 3,
+    "picture": "https://i.ibb.co/DLnyF9C/Clothing.png",
+    "category": "Clothing",
+    "category_bg": "#79C23F26",
+    "card_bg": "#79C23F",
+    "description": "Used Clothing Drive",
+    "price": 400
+  },
+  {
+    "id": 4,
+    "picture": "https://i.ibb.co/VQyWCBF/Food.png",
+    "category": "Food",
+    "category_bg": "#F8714726",
+    "card_bg": "#F87147",
+    "description": "Better Food for Everyone",
+    "price": 500
+  },
+  {
+    "id": 5,
+    "picture": "https://i.ibb.co/fYsYnV3/Health.png",
+    "category": "Health",
+    "category_bg": "#0052FF26",
+    "card_bg": "#0052FF",
+    "description": "Clean water for children",
+    "price": 200
+  },
+  {
+    "id": 6,
+    "picture": "https://i.ibb.co/zXjRRzK/Education.png",
+    "category": "Education",
+    "category_bg": "#FF444A26",
+    "card_bg": "#FF444A",
+    "description": "Good education",
+    "price": 300
+  },
+  {
+    "id": 7,
+    "picture": "https://i.ibb.co/DLnyF9C/Clothing.png",
+    "category": "Clothing",
+    "category_bg": "##79C23F26",
+    "card_bg": "##79C23F",
+    "description": "Used Clothing Drive",
+    "price": 400
+  },
+  {
+    "id": 8,
+    "picture": "https://i.ibb.co/VQyWCBF/Food.png",
+    "category": "Food",
+    "category_bg": "#F8714726",
+    "card_bg": "#F87147",
+    "description": "Better Food for Everyone",
+    "price": 500
+  },
+  {
+    "id": 9,
+    "picture": "https://i.ibb.co/fYsYnV3/Health.png",
+    "category": "Health",
+    "category_bg": "#0052FF26",
+    "card_bg": "#0052FF",
+    "description": "Clean water for children",
+    "price": 200
+  },
+  {
+    "id": 10,
+    "picture": "https://i.ibb.co/zXjRRzK/Education.png",
+    "category": "Education",
+    "category_bg": "#FF444A26",
+    "card_bg": "#FF444A",
+    "description": "Good education",
+    "price": 300
+  },
+  {
+    "id": 11,
+    "picture": "https://i.ibb.co/DLnyF9C/Clothing.png",
+    "category": "Clothing",
+    "category_bg": "#79C23F26",
+    "card_bg": "#79C23F",
+    "description": "Used Clothing Drive",
+    "price": 400
+  },
+  {
+    "id": 12,
+    "picture": "https://i.ibb.co/VQyWCBF/Food.png",
+    "category": "Food",
+    "category_bg": "#F8714726",
+    "card_bg": "#F87147",
+    "description": "Better Food for Everyone",
+    "price": 500
+  }
+]
