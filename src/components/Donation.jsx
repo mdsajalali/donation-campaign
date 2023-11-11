@@ -1,7 +1,8 @@
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const Donation = ({ data }) => {
-  const { id, picture, category, category_bg, card_bg, description, price } =
+  const { id, picture, category, description, price } =
     data;
 
   let bgColor = {
@@ -26,16 +27,17 @@ const Donation = ({ data }) => {
         <h1 className="text-black font-bold text-[18px] mt-2">{description}</h1>
         <p className="font-semibold">${price}</p>
         <Link to={`/donation/${id}`}>
-          <button
-            style={bgColor}
-            className="flex-grow py-2 px-3 rounded-sm mt-3"
-          >
+          <button style={bgColor} className="py-2 px-3 rounded-sm mt-3">
             View Details
           </button>
         </Link>
       </div>
     </div>
   );
+};
+
+Donation.propTypes = {
+  data: PropTypes.object,
 };
 
 export default Donation;
