@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Donation = ({ data }) => {
   const { id, picture, category, category_bg, card_bg, description, price } =
     data;
@@ -23,9 +25,14 @@ const Donation = ({ data }) => {
         </h2>
         <h1 className="text-black font-bold text-[18px] mt-2">{description}</h1>
         <p className="font-semibold">${price}</p>
-        <button style={bgColor} className="flex-grow py-2 px-3 rounded-sm mt-3">
-          View Details
-        </button>
+        <Link to={`/donation/${id}`}>
+          <button
+            style={bgColor}
+            className="flex-grow py-2 px-3 rounded-sm mt-3"
+          >
+            View Details
+          </button>
+        </Link>
       </div>
     </div>
   );
