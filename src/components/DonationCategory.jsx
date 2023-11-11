@@ -14,7 +14,7 @@ const DonationCategory = ({ data }) => {
         <img className="w-full" src={picture} alt={category} />
         <div className="p-3">
           <h2
-            className="bg-slate-400 inline-block py-[2px] px-3 rounded-sm text-white text-[14px]"
+            className=" inline-block py-[2px] px-3 rounded-sm text-white text-[14px]"
             style={bgColor}
           >
             {category}
