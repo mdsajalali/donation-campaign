@@ -1,12 +1,39 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import   { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const DonationDetail = () => {
   const { id } = useParams();
   const idInt = parseInt(id);
-  const donation_data = useLoaderData();
-  const donate = donation_data.find((data) => data.id === idInt);
-  console.log(donate);
+  const [loading, setLoading] = useState(true);
+  const [donate, setDonate] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/data.json"); 
+        const data = await response.json();
+        const item = data.find((item) => item.id === idInt); 
+        setDonate(item);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, [idInt]);
+
+  if (loading) {
+    return <p className="text-center">Loading...</p>; 
+  }
+
+  if (!donate) {
+    return <p>Data not found</p>; 
+  }
+
   const { picture, price, description, description_details } = donate;
+
   return (
     <div className="relative lg:container mx-auto p-5">
       <img
@@ -15,8 +42,8 @@ const DonationDetail = () => {
         alt=""
       />
 
-      <div className="absolute top-[450px]   left-10">
-        <button className=" bg-red-700 py-3 px-5 rounded-lg text-white">
+      <div className="absolute top-[450px] left-10">
+        <button className="bg-red-700 py-3 px-5 rounded-lg text-white">
           Donate ${price}
         </button>
       </div>
